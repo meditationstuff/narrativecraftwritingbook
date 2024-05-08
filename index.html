@@ -1,1 +1,155 @@
-first commit
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta
+name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+        body {
+            margin: 40px auto;
+            max-width: 50vw;
+            font-size: 1.2em;
+            color: #121212;
+            
+            /* These are technically the same, but use both */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+
+            -ms-word-break: break-all;
+            /* This is the dangerous one in WebKit, as it breaks things wherever */
+            word-break: break-all;
+            /* Instead use this non-standard one: */
+            word-break: break-word;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+            line-height: 1.4;
+        }
+
+        li {
+           line-height: 1.4;
+           margin-bottom: .1em;
+        }
+
+        h1 {
+            margin-top: 1em;
+        }
+
+        a:link {
+            color: #3a4fd3;
+        }
+
+        a:visited, a:hover {
+            color: #0a0068;
+        }
+
+        .darkmode {
+            background-color: #121212;
+            color: white;
+            opacity: 87%;
+        }
+
+        a.darkmode:link {
+            color: #5d6edf;
+        }
+
+        a.darkmode:visited, a.darkmode:hover {
+            color: rgb(129, 140, 216);
+        }
+
+        #darkmode {
+            position: fixed;
+            top: 2%;
+            right: 2%;
+        }
+
+         /* When the browser is at least 600px and above */
+         @media screen and (max-width: 1024px) {
+            body {
+                max-width: 90vw;
+            }
+        }
+
+    .paypal-button {
+        position: fixed;
+        top: 2%; /* Adjust the distance from the top as needed */
+        left: 2%; /* Adjust the distance from the left as needed */
+        z-index: 1000; /* Ensures the button stays on top of other elements */
+    }
+
+    </style>
+
+<title>
+	narrativecraftwritingbook
+</title>
+
+<!-- Hotjar Tracking Code for https://meditationbook.page/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2449937,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+</head>
+
+<body>
+
+<button id="darkmode">dark</button>
+<script>
+    document.querySelector("#darkmode").onclick = function(e) {
+        document.querySelector('body').classList.toggle('darkmode');
+        document.querySelectorAll("a").forEach((el) => {
+            el.classList.toggle('darkmode');
+        });    
+        document.querySelector('#darkmode').text(function(i, text) {
+        return text === "dark" ? "light" : "dark";
+    });
+    }
+    
+</script>
+
+<div class="paypal-button">
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="T25H5ZWDJD48Q" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+</div>
+
+<h1>bibliography</h1>
+<ul>
+<li><p>Abrusán, Márta. "The spectrum of perspective shift: protagonist projection versus free indirect discourse." Linguistics and Philosophy 44 (2021): 839-873.</p></li>
+<li><p>Adams, Kenn. How to improvise a full-length play: The art of spontaneous theater. Simon and Schuster, 2010.</p></li>
+<li><p>Asher, Nicholas, and Alex Lascarides. "Bridging." Journal of Semantics 15.1 (1998): 83-113.</p></li>
+<li><p>Banfield, Ann. "Reflective and non-reflective consciousness in the language of fiction." Poetics today 2.2 (1981): 61-76.</p></li>
+<li><p>Bickham, Jack. Elements of fiction writing-scene &amp; structure. Penguin, 1999.</p></li>
+<li><p>Clark, Herbert H. "Bridging." Theoretical issues in natural language processing. 1975.</p></li>
+<li><p><a href="https://www.google.com/search?q=complement+clause">https://www.google.com/search?q=complement+clause</a> [Last accessed: 2024-05-08]</p></li>
+<li><p><a href="https://www.google.com/search?q=complementizer">https://www.google.com/search?q=complementizer</a> [Last accessed: 2024-05-08]</p></li>
+<li><p><a href="https://www.google.com/search?q=%22finite%22+%22infinite%22+OR+%22infinitive%22+%22non-finite%22+OR+%22nonfinite%22+clause">https://www.google.com/search?q=%22finite%22+%22infinite%22+OR+%22infinitive%22+%22non-finite%22+OR+%22nonfinite%22+clause</a> [Last accessed: 2024-05-08]</p></li>
+<li><p>Huddleston, Rodney, and Geoffrey Pullum (Eds.). The Cambridge grammar of the English language (Reprint of 2002 Ed.). Cambridge University Press.</p></li>
+<li><p>Mercurio, Jim. The Craft of Scene Writing: Beat by Beat to a Better Script. Quill Driver Books, 2019.</p></li>
+<li><p>Nünning, Ansgar. "‘With the Benefit of Hindsight’: Features and Functions of Turning Points as a Narratological Concept and as a Way of Self-Making." Turning points: Concepts and narratives of change in literature and other media (2012): 31-58.</p></li>
+<li><p>Hardy, Janice. Understanding Show, Don't Tell (and Really Getting It): Learn how to Find--and Fix--told Prose in Your Writing. Janice Hardy, 2016.</p></li>
+<li><p>Lee, EunHee. "The logic of narratives." The Logic of Narratives. Brill, 2020.</p></li>
+<li><p>McGregor, William B. "Complementation as interpersonal grammar." Word 59.1-2 (2008): 25-53.</p></li>
+<li><p>Mélac, Eric. "The grammaticalization of evidentiality in English." English Language &amp; Linguistics 26.2 (2022): 331-359. [<a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C50&q=M%C3%A9lac%2C+Eric.+%22The+grammaticalization+of+evidentiality+in+English.%22+English+Language+%26+Linguistics+26.2+%282022%29%3A+331-359.&btnG=">google scholar</a>]</p></li>
+<li><p>Murray, Sarah E. "Varieties of update." Semantics and Pragmatics 7 (2014): 2-1. <a href="https://doi.org/10.3765/sp.7.2">https://doi.org/10.3765/sp.7.2</a> [<a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C50&q=Murray%2C+Sarah+E.+%22Varieties+of+update.%22+Semantics+and+Pragmatics+7+%282014%29%3A+2-1.&btnG=">google scholar</a>]</p></li>
+<li><p>Palmer, Alan. Fictional minds. U of Nebraska Press, 2004.</p></li>
+<li><p>Proust, Joëlle. "A plea for mental acts." Synthese 129 (2001): 105-128.</p></li>
+<li><p>Tufte, Virginia. "Artful sentences: Syntax as style." Graphic P (2006).</p></li>
+<li><p>Vande Kopple, William J. Clear and coherent prose: A functional approach. Pearson Scott Foresman, 1989.</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Complement_(linguistics)">https://en.wikipedia.org/wiki/Complement_(linguistics)</a> [Last accessed: 2024-05-08]</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Propositional_attitude">https://en.wikipedia.org/wiki/Propositional_attitude</a> [Last accessed: 2024-05-08]</p></li>
+</ul>
+</body>
+</html>

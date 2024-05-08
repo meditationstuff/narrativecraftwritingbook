@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta
+name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+        body {
+            margin: 40px auto;
+            max-width: 50vw;
+            font-size: 1.2em;
+            color: #121212;
+            
+            /* These are technically the same, but use both */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+
+            -ms-word-break: break-all;
+            /* This is the dangerous one in WebKit, as it breaks things wherever */
+            word-break: break-all;
+            /* Instead use this non-standard one: */
+            word-break: break-word;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+            line-height: 1.4;
+        }
+
+        li {
+           line-height: 1.4;
+           margin-bottom: .1em;
+        }
+
+        h1 {
+            margin-top: 1em;
+        }
+
+        a:link {
+            color: #3a4fd3;
+        }
+
+        a:visited, a:hover {
+            color: #0a0068;
+        }
+
+        .darkmode {
+            background-color: #121212;
+            color: white;
+            opacity: 87%;
+        }
+
+        a.darkmode:link {
+            color: #5d6edf;
+        }
+
+        a.darkmode:visited, a.darkmode:hover {
+            color: rgb(129, 140, 216);
+        }
+
+        #darkmode {
+            position: fixed;
+            top: 2%;
+            right: 2%;
+        }
+
+         /* When the browser is at least 600px and above */
+         @media screen and (max-width: 1024px) {
+            body {
+                max-width: 90vw;
+            }
+        }
+
+    .paypal-button {
+        position: fixed;
+        top: 2%; /* Adjust the distance from the top as needed */
+        left: 2%; /* Adjust the distance from the left as needed */
+        z-index: 1000; /* Ensures the button stays on top of other elements */
+    }
+
+    </style>
+
+<title>
+	narrativecraftwritingbook
+</title>
+
+<!-- Hotjar Tracking Code for https://meditationbook.page/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2449937,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+</head>
+
+<body>
+
+<button id="darkmode">dark</button>
+<script>
+    document.querySelector("#darkmode").onclick = function(e) {
+        document.querySelector('body').classList.toggle('darkmode');
+        document.querySelectorAll("a").forEach((el) => {
+            el.classList.toggle('darkmode');
+        });    
+        document.querySelector('#darkmode').text(function(i, text) {
+        return text === "dark" ? "light" : "dark";
+    });
+    }
+    
+</script>
+
+<div class="paypal-button">
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="T25H5ZWDJD48Q" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+</div>
+
